@@ -2,12 +2,12 @@ import csv
 
 
 class CallForElevator:
-    def __init__(self, time: float, src: int, dest: int, state: int, allocate_elev: int, id: int):
-        self.time = time
-        self.src = src
-        self.dest = dest
-        self.state = state  # state GOING2SRC=1, GOING2DEST=2, DONE=3;
-        self.allocate_elev = allocate_elev
+    def __init__(self, id: int, time: float, src: int, dest: int, state: int, allocate_elev: int):
+        self.time = float(time)
+        self.src = int(src)
+        self.dest = int(dest)
+        self.state = int(state)  # state GOING2SRC=1, GOING2DEST=2, DONE=3;
+        self.allocate_elev = int(allocate_elev)
         self.id = id  # id is the index of Call at the List (parallel to csv file)
 
         if self.dest - self.src > 0:  # type UP=1, DOWN=-1;
@@ -73,7 +73,7 @@ def read_from_csv(csv_name:  str):
         i = 0    # an id for a call
         for line in calls_reader:
             calls_list.append(
-                CallForElevator(line[1], line[2], line[3], line[4], line[5], i))
+                CallForElevator(i, line[1], line[2], line[3], line[4], line[5]))
             i = i + 1
     return calls_list
 
