@@ -17,54 +17,10 @@ class Elevator:
         self.state = 0  # state: UP=1 DOWN=-1 LEVEL=0
         self.curr_time = 0.0
 
-
-
     def _str_(self):
         return "" + str(self.id) + "," + str(self.speed) + "," + str(self.min_floor) + "," \
                + str(self.max_floor) + "," + str(self.close_time) + "," + str(self.open_time) \
                + "," + str(self.start_time) + "," + str(self.stop_time)
 
-    def get_id(self):
-        return self.id
-
-    def get_speed(self):
-        return self.speed
-
-    def get_min_floor(self):
-        return self.min_floor
-
-    def get_max_floor(self):
-        return self.max_floor
-
-    def get_close_time(self):
-        return self.close_time
-
-    def get_open_time(self):
-        return self.open_time
-
-    def get_stop_time(self):
-        return self.stop_time
-
-    def get_start_time(self):
-        return self.start_time
-
-    def get_pos(self):
-        return self.curr_pos
-
-    def set_pos(self, floor):
-        self.curr_pos = floor
-
-    def get_state(self):
-        return self.state
-
     def get_delay_time(self):
         return self.start_time + self.stop_time + self.open_time + self.close_time
-
-    def get_curr_time(self):
-        return self.curr_time
-
-    def set_curr_time(self, time):
-        self.curr_time = time
-
-
-

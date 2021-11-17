@@ -15,34 +15,6 @@ class CallForElevator:
         else:
             self.type = -1
 
-    def get_start_time(self):
-        return self.time
-
-    def get_state(self):
-        return self.state
-
-    def set_state(self, new_state):
-        if 0 < new_state <= 3:
-            self.state = new_state
-
-    def get_src(self):
-        return self.src
-
-    def get_dest(self):
-        return self.dest
-
-    def get_type(self):
-        return self.type
-
-    def get_allocate(self):
-        return self.allocate_elev
-
-    def set_allocated_to(self, elev_id):
-        self.allocate_elev = elev_id
-
-    def get_id(self):
-        return int(self.id)
-
     def get_distance(self):
         return abs(self.dest - self.src)
 
@@ -63,4 +35,3 @@ def is_between(src, dest, floor):
     elif dest >= floor >= src:
         ans = True
     return ans
-
