@@ -59,4 +59,9 @@ class Elevator:
     def set_curr_time(self, time):
         self.curr_time = time
 
+    def _str_(self):
+        return "" + str(self.id) + "," + str(self.speed) + "," + str(self.min_floor) + "," \
+               + str(self.max_floor) + "," + str(self.close_time) + "," + str(self.open_time) \
+               + "," + str(self.start_time) + "," + str(self.stop_time)
+
 
