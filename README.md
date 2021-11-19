@@ -17,3 +17,23 @@ Our goal is to set of a "call" to the elevator. we need to define the goodness o
 
 # 2
 
+
+
+
+
+# Running the simulation 
+Run the Ex1.py file in a directory containing 'Brain', 'Ex1Objects', relevant Building json and csv with calls.  <br>
+Use the following code template to run Ex1:  <br>
+```
+python Ex1.py <Building json> <Calls csv> <output name>
+```
+The csv with the results (same calls but allocated to elevators) will be created in the directory.   <br>
+
+Running the algorithm example:
+```
+python Ex1.py B1.json C2.csv out.csv
+```
+Running the test code example:
+```
+java -jar Ex1_checker_V1.2_obf.jar 1111,2222,3333 B2.json Ex1_Calls_case_2_b.csv out.log
+```
