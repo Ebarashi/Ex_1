@@ -35,12 +35,6 @@ class Building:
         except IOError as e:
             print(e)
 
-    def get_min_f(self) -> int:
-        return self.min_floor
-
-    def get_max_f(self) -> int:
-        return self.max_floor
-
     def get_num_of_elev(self) -> int:
         return len(self.dict_elev)
 
