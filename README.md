@@ -1,5 +1,8 @@
 # Ex_1
 Ex_1 - elevator - offline algo
+Prof. Boaz Ben Moshe
+harel giladi- 211576277
+Oilon barashi - 322679713
 
 # 1 
 # -Literature review:
@@ -17,11 +20,17 @@ Our goal is to set of a "call" to the elevator. we need to define the goodness o
 
 # 2
 # Offline algorithm
+first We'll find the max_path the longest call(path=abs(dest-src)).
+then we will calculate a range (max_path\the building num of elevs) so we will have some measurement for "knowing when a call is over", then we will go trough the building elevs
+and assigen for each one of them a diffrent range of opration.(optimal:the fastet gets the longest and so on)
+and now we could work on each call and assign it to the best elev by considring the call path.
+
+# 3 uml diagram
+
+![2021-11-19 (2)](https://user-images.githubusercontent.com/93948749/142690263-4e561ce9-138d-4b0d-8343-8c4852b27d4f.png)
 
 
-
-
-
+# 4
 # Running the simulation 
 Run the Ex1.py file in a directory containing 'Brain', 'Ex1Objects', relevant Building json and csv with calls.  <br>
 Use the following code template to run Ex1:  <br>
