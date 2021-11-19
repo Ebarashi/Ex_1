@@ -18,7 +18,7 @@ class Building:
 
     def read_from_json(self, file_name: str) -> None:
         try:
-            with  open(file_name, "r") as f:
+            with open(file_name, "r") as f:
                 data_dict = json.load(f)
                 for k, v in data_dict.items():
                     if k == '_minFloor':
@@ -35,10 +35,14 @@ class Building:
         except IOError as e:
             print(e)
 
+        #self.dict_elev = sorted(self.dict_elev, key=lambda x: x.time)
+
     def get_num_of_elev(self) -> int:
         return len(self.dict_elev)
 
     def get_elev(self, elev_id) -> Elevator:
         return self.dict_elev[elev_id]
+
+
 
 
