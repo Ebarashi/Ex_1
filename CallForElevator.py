@@ -1,4 +1,3 @@
-import csv
 
 
 class CallForElevator:
@@ -18,20 +17,7 @@ class CallForElevator:
     def get_distance(self):
         return abs(self.dest - self.src)
 
-    def init(self, call) -> bool:
-        """ True if the new call is between the src and dest of call """
-        if self.get_type() == call.get_type() \
-                and is_between(self.get_src(), self.get_dest(), call.get_src()) \
-                and is_between(self.get_src(), self.get_dest(), call.get_dest()):
-            return True
-        return False
+    def __str__(self):
+        return "Elevator call" + "," + str(self.time) + "," + str(self.src) \
+               + "," + str(self.dest) + "," + str(self.state) + "," + str(self.allocate_elev)
 
-
-def is_between(src, dest, floor):
-    """if floor between src and dest"""
-    ans = False
-    if dest <= floor <= src:
-        ans = True
-    elif dest >= floor >= src:
-        ans = True
-    return ans

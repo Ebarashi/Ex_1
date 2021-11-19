@@ -24,3 +24,5 @@ def write_to_csv(calls_list, csv_name):
     c = str(calls_list[len(calls_list) - 1])
     f.write(c)
     f.close()
+
+

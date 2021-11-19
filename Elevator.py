@@ -17,7 +17,6 @@ class Elevator:
         self.curr_pos = 0
         self.state = 0  # state: UP=1 DOWN=-1 LEVEL=0
         self.curr_time = 0.0
-        self.calls_list = read_from_csv()
 
     def _str_(self):
         return "" + str(self.id) + "," + str(self.speed) + "," + str(self.min_floor) + "," \
