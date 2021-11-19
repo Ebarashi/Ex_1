@@ -1,12 +1,13 @@
 import csv
 from CallForElevator import CallForElevator
 
-def read_from_csv(csv_name:  str):
+
+def read_from_csv(csv_name: str):
     """ return list of Calls from csv file """
     calls_list = list()
     with open(csv_name, "r") as csv_file:
         calls_reader = csv.reader(csv_file)
-        i = 0    # an id for a call
+        i = 0  # an id for a call
         for line in calls_reader:
             calls_list.append(
                 CallForElevator(i, line[1], line[2], line[3], line[4], line[5]))
