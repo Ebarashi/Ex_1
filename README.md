@@ -2,7 +2,7 @@
 Ex_1 - elevator - offline algo
 
 # 1 
--Literature review:
+# -Literature review:
 These are the links that have inspired us to execute the algorithm, given us knowledge regarding problem mapping, object properties, and optimization.
 https://www.diva-portal.org/smash/get/diva2:668654/FULLTEXT01.pdf
 https://studylib.net/doc/7878746/on-line-algorithms-versus-off-line-algorithms-for-the-ele...
@@ -16,6 +16,7 @@ Our goal is to set of a "call" to the elevator. we need to define the goodness o
 2. miss as little as possible from the given calls.
 
 # 2
+# Offline algorithm
 
 
 
