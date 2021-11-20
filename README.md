@@ -31,7 +31,7 @@ and now we could work on each call and assign it to the best elev by considring 
 
 
 # 4
-# Running the simulation 
+# Running the Algo and checker 
 
 Run the Ex1_main.py with the relevant Building json and csv with calls.  <br>
 The csv with the results (same calls but with an elevator in the column) will be created in the directory. 
