@@ -35,7 +35,7 @@ class Building:
         except IOError as e:
             print(e)
 
-        #self.dict_elev = sorted(self.dict_elev, key=lambda x: x.time)
+       
 
     def get_num_of_elev(self) -> int:
         return len(self.dict_elev)
