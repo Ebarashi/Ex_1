@@ -22,7 +22,7 @@ Our goal is to set of a "call" to the elevator. we need to define the goodness o
 # Offline algorithm
 first We'll find the max_path the longest call(path=abs(dest-src)).
 then we will calculate a range (max_path\the building num of elevs) so we will have some measurement for "knowing when a call is over", then we will go trough the building elevs
-and assigen for each one of them a diffrent range of opration.(optimal:the fastet gets the longest and so on)
+and assigen for each one of them a diffrent range of operation.
 and now we could work on each call and assign it to the best elev by considring the call path.
 
 # 3 uml diagram
@@ -32,18 +32,11 @@ and now we could work on each call and assign it to the best elev by considring 
 
 # 4
 # Running the simulation 
-Run the Ex1.py file in a directory containing 'Brain', 'Ex1Objects', relevant Building json and csv with calls.  <br>
-Use the following code template to run Ex1:  <br>
-```
-python Ex1.py <Building json> <Calls csv> <output name>
-```
-The csv with the results (same calls but allocated to elevators) will be created in the directory.   <br>
 
-Running the algorithm example:
-```
-python Ex1.py B1.json C2.csv out.csv
-```
-Running the test code example:
+Run the Ex1_main.py with the relevant Building json and csv with calls.  <br>
+The csv with the results (same calls but with an elevator in the column) will be created in the directory. 
+
+Running the test code with this linev on cmd:
 ```
 java -jar Ex1_checker_V1.2_obf.jar 1111,2222,3333 B2.json Ex1_Calls_case_2_b.csv out.log
 ```
