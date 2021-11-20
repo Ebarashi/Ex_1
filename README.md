@@ -2,7 +2,7 @@
 Ex_1 - elevator - offline algo
 Prof. Boaz Ben Moshe
 harel giladi- 211576277
-Oilon barashi - 322679713
+Eilon barashi - 322679713
 
 # 1 
 # -Literature review:
